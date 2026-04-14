@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../PJT-imagens02/logo-nerdshop.png" type="image/x-icon">
+    <title>Exercício 20 / hover</title>
+    <style>
+        body {
+            background-color: rgb(206, 235, 161);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1 {
+            background-color: darkgreen;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: aliceblue;
+            background-color: rgb(0, 0, 0);
+            width: 200px;
+        }
+
+        div > h2 {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: darkgreen;
+            color: aliceblue;
+
+        }
+
+        div:hover {
+            color: rgb(255, 0, 0);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <hr>
+    <p style="background-color: darkgreen; color: aliceblue;">Passe o mouse sobre o texto abaixo:</p>
+    <p>Segue o texto:</p>
+    <div>"Passe o mouse aqui"
+        <p>"Texto secreto"</p>
+        <h2>Fim do Exemplo</h2>
+    </div>
+    <hr>
+</body>
+</html>

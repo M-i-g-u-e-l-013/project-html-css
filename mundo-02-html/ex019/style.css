@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Bungee&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Playwrite+IE:wght@100..400&display=swap');
+
+/* Em HTML = id / em CSS = # */
+/* Em HTML é class em CSS é "." */
+
+
+body {
+    background-color: #d9fdd3;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 52, 0);
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+h1#Principal {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 52, 0);
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.basico {
+    color: greenyellow;
+    font-weight: bold;
+
+}
+
+.intermediario {
+    color: yellow;
+
+}
+
+.avancado {
+    color: red;
+
+}
+
+p {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.destaque {
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 52, 0);
+}
