@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    table {
+        border-collapse: collapse;
+        min-width: 600px;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #333;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>Tabela Responsiva</h2>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+                <th>Profissão</th>
+                <th>Salário</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>25</td>
+                <td>São Paulo</td>
+                <td>Designer</td>
+                <td>R$ 4000</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>30</td>
+                <td>Rio</td>
+                <td>Dev</td>
+                <td>R$ 7000</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>29</td>
+                <td>Minas Gerais</td>
+                <td>Contadora</td>
+                <td>R$ 3000</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>19</td>
+                <td>São Paulo</td>
+                <td>Programador</td>
+                <td>R$ 10000</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicío 23 / E</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        col.cnome {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agrupando colunas</h1>
+    </header>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cIdade">
+            <col class="cProfissão">
+        </colgroup>
+        <caption>Cadastros</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Desing</td>
+        </tr>
+        <tr>
+            <td>will</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>24</td>
+            <td>Vendedora</td>
+        </tr>
+        <tr>
+            <td>Liris</td>
+            <td>F</td>
+            <td>18</td>
+            <td>Auxiliar Administrativo</td>
+        </tr>
+        <tr>
+            <td>Miguel</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Engenheiro de Software</td>
+        </tr>
+    </table>
+</body>
+</html>
