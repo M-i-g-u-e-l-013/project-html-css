@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/Tec.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicío 24 / F</title>
+</head>
+<body>
+    <header>
+        <h1>Conteúdos dentro de Iframes</h1>
+        <p>Conteudos responsivos dentro de um iframe</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Cursiosidades</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Fale Conosco</a>
+    </nav>
+    <main>
+        <h2>O que é um iframe ?</h2>
+        <p>Um iframe (abreviação de inline frame) em HTML é uma tag usada para incorporar outra página da web dentro da página atual. Ou seja, ele cria uma “janela” dentro do seu site que carrega conteúdo externo.</p>
+        <p>Para entender melhor, pense no iframe como um “site dentro do site”. Quando o navegador encontra a tag iframe, ele faz uma nova requisição HTTP separada para carregar o conteúdo especificado no atributo src. Esse conteúdo é tratado como um documento completamente independente, com seu próprio DOM, CSS, JavaScript e contexto de execução. Ou seja, o que acontece dentro do iframe não interfere diretamente na página principal — pelo menos não sem mecanismos específicos.</p>
+        <h2>Vídeos em iframe:</h2>
+        <div class="iframe-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=KIh1KUNq2LfnXjHD&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <p>Usar vídeos em iframe é, na prática, uma das aplicações mais comuns desse elemento. Sempre que você incorpora um vídeo do YouTube, Vimeo ou outra plataforma, quase sempre está usando um iframe por trás.</p>
+        <h2>Como funciona ?</h2>
+        <p>Plataformas de vídeo como YouTube e Vimeo fornecem um código pronto que você só precisa colar no seu HTML. Esse código já vem configurado com um iframe apontando para o player deles.</p>
+        <h2>Mapas do Google</h2>
+        <div class="iframe-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116677.14129188277!2d-46.50158608960151!3d-23.954758145566196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce03423c3b1c3b%3A0x584dceedfc63644f!2sSantos%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1777136385142!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <section>
+            <h3>Pontos importantes sobre iframes:</h3>
+            <p>Os iframes são um recurso clássico do HTML que continuam extremamente relevantes, mesmo com a evolução das tecnologias web.</p>
+            <ul>
+                <li>Isolamento de conteúdo</li>
+                <li>Segurança (muito importante)</li>
+                <li>Política de mesma origem (Same-Origin Policy)</li>
+                <li>Desempenho</li>
+                <li>Uso mais comum: vídeos e embeds</li>
+                <p>Em síntese, os iframes são uma ferramenta poderosa e prática para integrar conteúdos externos de forma isolada e relativamente segura. Quando usados com cuidado</p>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Site criado para estudos em <a href="https://pt.wikipedia.org/wiki/HTML" target="_blank"><abbr title="HTML (HyperText Markup Language)">HTML</abbr></a> e <a href="https://pt.wikipedia.org/wiki/CSS" target="_blank"><abbr title="CSS (Cascading Style Sheets)">CSS</abbr></a></p>
+    </footer>
+</body>
+</html>
