@@ -74,6 +74,7 @@ main {
 
 main > h2 {
     font-family: var(--font02);
+    margin: 5px;
     color: var(--cor4);
     font-size: 1.6em;
 }
