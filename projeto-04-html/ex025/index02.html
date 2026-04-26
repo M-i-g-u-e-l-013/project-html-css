@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/Tec.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicío 25 / B</title>
+</head>
+<body>
+    <header>
+        <h1>Teste de Formulário</h1>
+        <p>Um formulário HTML é criado com a tag form, que serve como contêiner para campos de entrada</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Cursiosidades</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Fale Conosco</a>
+    </nav>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p>
+                <label for="iusu">Usuario: </label>
+                <input type="text" name="usu" id="iusu" required placeholder="Nome de usuário:">
+            </p>
+            <p>
+                <label for="isen">Senha: </label>
+                <input type="password" name="sen" id="isen" required minlength="8" placeholder="Senha do usuário:">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+    <footer>
+        <p>Site criado para estudos em HTML e CSS</p>
+    </footer>
+</body>
+</html>
