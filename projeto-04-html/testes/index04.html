@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/Tec.png" type="image/x-icon">
+    <title>testes.com</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(192, 241, 192);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(8, 92, 8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header > p {
+            padding-top: 8px;
+        }
+
+        nav {
+            background-color: rgb(2, 144, 2);
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        nav > a {
+            color: white;
+            text-decoration: none;
+            margin: 6px;
+        }
+
+        nav > a:hover {
+            background-color: rgb(2, 182, 2);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        fieldset {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border: 2px solid green;
+        }
+
+        legend {
+            color: rgb(1, 115, 1);
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"] {
+            font-weight: bold;
+            margin: 4px;
+            width: 95%;
+            padding: 8px;
+            border-radius: 10px;
+            border: 1px solid black;
+            margin-bottom: 3px;
+        }
+
+        .botôes {
+            margin: auto;
+            text-align: center;
+            
+        }
+
+        .botôes input {
+            margin: 10px;
+            width: 80px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            border: 1px solid black;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 7px;
+        }
+
+        input[type="reset"] {
+            background-color: red;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 7px;
+        }
+
+        footer {
+            background-color: green;
+            padding: 8px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulários Modernos</h1>
+        <p>Preencha seus dados abaixo para se cadastrar</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Contato</a>
+        <a href="#">Termos de uso</a>
+    </nav>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <div>
+                    <label for="Inome"><b>Nome:</b></label>
+                    <input type="text" name="nome" id="inome" placeholder="Nome Cadastrado:">
+                </div>
+
+                <div>
+                    <label for="isobrenome"><b>Sobrenome:</b></label>
+                    <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome Cadastrado:">
+                </div>
+
+                <div>
+                    <label for="Iidade"><b>Idade:</b></label>
+                    <input type="number" name="idade" id="Iidade" required placeholder="Digite sua idade:" min="18" max="65">
+                </div>
+
+                <div>
+                    <label for="iemail"><b>E-mail:</b></label>
+                    <input type="email" name="email" id="iemail" required placeholder="E-mail de Login:">
+                </div>
+
+                <div>
+                    <label for="isenha"><b>Senha:</b></label>
+                    <input type="password" name="senha" id="isenha" required placeholder="Senha de Login:">
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Sexo</legend>
+
+                <div>
+                    <label for="sxmasculino"><b>Masculino</b></label>
+                    <input type="radio" name="sexo" id="sxmasculino" required>
+                </div>
+
+                <div>
+                    <label for="sxfeminino"><b>Feminino</b></label>
+                    <input type="radio" name="sexo" id="sxfeminino" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                
+                <legend>Interesses favoritos</legend>
+
+                <div>
+                    <input type="checkbox" name="esportes" id="ileitura" value="leitura"> <label for="ileitura">Leitura</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="esportes" id="ijogos" value="Jogos Eletronicos"> <label for="ijogos">Jogos Eletronicos</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="esportes" id="imusculação" value="Musculação"> <label for="imusculação">Musculação</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="esportes" id="iprogramação" value="Programação"> <label for="iprogramação">Programação</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="esportes" id="icinema" value="Cinema e Séries"> <label for="icinema">Cinema e Séries</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="esportes" id="iculi" value="Culinária"> <label for="iculi">Culinária</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="esportes" id="imoda" value="Moda e Estilo"> <label for="imoda">Moda e Estilo</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Cor Favorita</legend>
+
+                <div>
+                    <label for="icor"><b>Sua cor favorita:</b></label> <br>
+                    <input type="color" name="cor" id="icolor" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Foto de Cadastro</legend>
+
+                <div>
+                    <input type="file" name="foto" id="ifoto">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Nivel de Satisfação</legend>
+
+                <div>
+                    <label for="inivel"><b>Nivel de Satisfação da Pesquisa</b></label>
+                    <input type="range" name="nivel" id="inivel" required>
+                </div>
+            </fieldset>
+
+            <div class="botôes">
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Excluir">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Site criado para estudos</p>
+    </footer>
+</body>
+</html>

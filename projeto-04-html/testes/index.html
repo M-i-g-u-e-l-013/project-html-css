@@ -9,7 +9,71 @@
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Formulário Moderno</h1>
+        <p>Preencha seus dados abaixo</p>
     </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Contato</a>
+    </nav>
+    <main>
+        <form action="cadastro.py" method="get" autocomplete="on">
+
+            <fieldset>
+
+            <legend>Dados pessoais</legend>
+
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"> <br>
+
+            <label for="iidade">Idade:</label>
+            <input type="number" name="idade" id="iidade"> <br>
+
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Sexo</legend>
+
+                <div>
+                    <label for="sxmasculino">Masculino</label>
+                    <input type="radio" name="sexo" id="sxmasculino">
+                </div>
+
+                <div>
+                    <label for="sxfeminino">Feminino</label>
+                    <input type="radio" name="sexo" id="sxfeminino">
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+            <legend>Esportes favoritos</legend>
+
+                <div>
+                    <input type="checkbox" name="esportes" id="Futebol"> <label>Futebol</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="esportes" id="Basquete"> <label>Basquete</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="esportes" id="Tênis"> <label>Tênis</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="esportes" id="Corrida"> <label>Corrida</label>
+                </div>
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Excluir">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Site criado para estudos em HTML e CSS</p>
+    </footer>
 </body>
 </html>
