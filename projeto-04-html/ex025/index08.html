@@ -18,7 +18,7 @@
 
                 <div>
                     <label for="in1">Número 1: </label>
-                    <input type="number" name="n1" id="in1" min="0" required>
+                    <input type="number" name="n1" id="in1" min="0" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
                 </div>
 
             </fieldset>
@@ -29,7 +29,7 @@
 
                 <div>
                     <label for="in2">Número 2:</label>
-                    <input type="number" name="n2" id="in2" min="0" required>
+                    <input type="number" name="n2" id="in2" min="0" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
                 </div>
             </fieldset>
 
@@ -39,12 +39,12 @@
 
                 <div>
                     <label for="isoma">Soma: </label>
-                    <output id="isoma"></output>
+                    <output id="isoma">0</output>
                 </div>
             </fieldset>
 
             <div>
-                <input type="submit" value="Cadastrar">
+                <input type="submit" value="Enviar">
                 <input type="reset" value="Excluir">
             </div>
         </form>
