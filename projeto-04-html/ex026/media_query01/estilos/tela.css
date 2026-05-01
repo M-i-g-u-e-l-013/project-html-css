@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#d8f3dc;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(90deg,#006400,#008000);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.1rem;
+    opacity:0.9;
+}
+
+/* MENU */
+
+nav{
+    background:#004b23;
+    padding:15px;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#95d5b2;
+}
+
+/* CONTEÚDO */
+
+main{
+    max-width:1100px;
+    margin:40px auto;
+    padding:20px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card h2{
+    font-size:2.2rem;
+    margin-bottom:20px;
+    color:#006400;
+}
+
+.card p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/* IMAGEM */
+
+.card img{
+    width:100%;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#004b23;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .card h2{
+        font-size:1.6rem;
+    }
+
+}
